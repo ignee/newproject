@@ -18,7 +18,7 @@ $name = $conn->real_escape_string($_POST['name']);
 $email = $conn->real_escape_string($_POST['email']);
 
 // Use prepared statements to prevent SQL injection
-$stmt = $conn->prepare("INSERT INTO users (name, email) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO new_table (name, email) VALUES (?, ?)");
 $stmt->bind_param("ss", $name, $email);  // "ss" means two string parameters
 
 // Execute the query and check if successful
