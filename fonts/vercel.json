@@ -11,7 +11,7 @@
     "rewrites": [
       {
         "source": "/api/:path*",
-        "destination": "https://your-bucks.vercel.app/api/:path*"
+        "destination": "https://newproject-xi-smoky.vercel.app/api/:path*"
       }
     ]
   }
