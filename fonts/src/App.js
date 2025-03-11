@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to React Frontend</h1>
+        <h1>who are you ?</h1>
         <p className="App-description">
           <strong>Message from Backend:</strong> {message || "Loading..."}
         </p>
