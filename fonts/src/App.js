@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import './App.css';
 function App() {
   const [message, setMessage] = useState("");
 
@@ -10,9 +10,16 @@ function App() {
   }, []);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>React Frontend</h1>
-      <p>Message from Backend: {message}</p>
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to React Frontend</h1>
+        <p className="App-description">
+          <strong>Message from Backend:</strong> {message || "Loading..."}
+        </p>
+      </header>
+      <footer className="App-footer">
+        <p>&copy; {new Date().getFullYear()} Your Project</p>
+      </footer>
     </div>
   );
 }
